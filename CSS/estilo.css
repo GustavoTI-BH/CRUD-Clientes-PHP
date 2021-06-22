@@ -1,0 +1,43 @@
+/** Estilo da tabela **/
+#tabelaClientes{
+    width:80%;
+    margin:0 auto;
+    border:0;
+    box-shadow: 0 5px 30px darkgrey;
+    border-spacing: 0;
+  }
+  
+  #tabelaClientes thead th{
+    font-weight: bold;
+    background-color: black;
+    color:white;
+    
+    padding:5px 10px;
+  }
+  
+  #tabelaClientes tr td{
+    padding:5px 10px;
+    text-align: center;
+    
+    cursor: pointer; /**para não mostrar cursor de texto**/
+  }
+  
+  #tabelaClientes tr td:last-child{
+    text-align: right;
+  }
+  
+  /**Cores**/
+  #tabelaClientestr:nth-child(odd){
+    background-color: #eee;
+  }
+  
+  /**Cor da linha quando o mouse passar por cima**/
+  #tabelaClientes tr:hover td{
+    background-color: #feffb7;
+  }
+  
+  /**Cor da linha quando selecionado**/
+  #tabelaClientes tr.selecionado td{
+    background-color: #aff7ff;
+  }
+  
